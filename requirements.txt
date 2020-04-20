@@ -1,0 +1,8 @@
+numpy
+pandas
+flask
+tensorflow
+tensorflow-hub
+pickle
+chatterbot
+chatterbot-corpus
