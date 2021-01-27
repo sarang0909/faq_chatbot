@@ -22,7 +22,7 @@ def embed(input):
   return model([input])
 dataset['Question_Vector'] = dataset.Question.map(embed)
 dataset['Question_Vector'] = dataset.Question_Vector.map(np.array)
-pickle.dump(updated_dataset, open('dataset.pkl', 'wb'))
+pickle.dump(dataset, open('dataset.pkl', 'wb'))
 '''   
         
 class DialogueManager(object):
