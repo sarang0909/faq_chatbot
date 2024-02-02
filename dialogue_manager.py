@@ -51,7 +51,7 @@ class DialogueManager(object):
         query_vec = self.embed(query)
         sims = []
         for que_vec  in self.QUESTION_VECTORS:            
-            sim =  cosine_similarity(query_vec, query_vec)
+            sim =  cosine_similarity(que_vec, query_vec)
             sims.append(sim)
         max_ind = sims.index(max(sims))
         return max_ind,sims[max_ind][0][0]      
